@@ -38,6 +38,12 @@ class ActivityC:AppCompatActivity() {
             }
         })
 
+        Somelistener.register(this)
 
+    }
+
+    override fun onStop() {
+        Somelistener.unregister(this)
+        super.onStop()
     }
 }

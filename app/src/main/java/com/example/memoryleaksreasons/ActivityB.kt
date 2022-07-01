@@ -43,6 +43,7 @@ class ActivityB:AppCompatActivity() {
             }
         }).start()
 
+        Somelistener.register(this)
 
     }
 
