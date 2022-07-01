@@ -10,6 +10,7 @@ import java.util.logging.Logger
 
 class ActivityC:AppCompatActivity() {
 
+    //Here as context is decalared as static, GC won't be able to flush it out
     companion object{
         lateinit var context: Context
     }

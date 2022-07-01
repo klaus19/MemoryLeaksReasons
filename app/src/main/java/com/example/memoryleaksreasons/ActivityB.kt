@@ -13,6 +13,9 @@ import java.util.logging.Logger
 //Reason 1 - Use of static views/context/activity
 class ActivityB:AppCompatActivity() {
 
+    //Here as context is decalared as static, GC won't be able to flush it out
+
+
     companion object{
 
         lateinit var context: Context
